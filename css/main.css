@@ -1,0 +1,284 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #242B33;
+  color: #fff;
+  font-size: 16px;
+}
+
+.none {
+  display: none !important;
+}
+
+a {
+  color: #fff;
+}
+a:hover {
+  color: #D4C17F;
+  transition: 0.2s ease-in;
+}
+
+.container {
+  padding: 15px;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.title-2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #D4C17F;
+}
+
+.visuality-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 840px;
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url("../../img/header/bg.jpg");
+  padding-top: 30px;
+  padding-bottom: 74px;
+}
+
+.header__top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__tittle {
+  padding-bottom: 121px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #D4C17F;
+  position: relative;
+}
+
+.header__tittle-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header__footer-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__footer-address {
+  position: relative;
+}
+.header__footer-address:before {
+  content: "";
+  width: 14.71px;
+  height: 21px;
+  background-image: url("../../img/header/location.svg");
+  position: absolute;
+  left: -21px;
+  top: 0;
+}
+
+.header__footer-callback {
+  position: relative;
+}
+.header__footer-callback:before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-image: url(../../img/header/phone-call.svg);
+  left: -28px;
+  top: 0;
+}
+
+.nav ul {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  font-size: 14px;
+}
+
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits-row {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  justify-content: center;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__item-img {
+  width: 80px;
+  height: 80px;
+}
+
+.benefits__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.35;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 53px;
+}
+
+.apartments__title {
+  margin-bottom: 88px;
+}
+
+.card {
+  display: block;
+  position: relative;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%);
+}
+.card__title {
+  position: absolute;
+  left: 50px;
+  bottom: 44px;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */
