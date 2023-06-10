@@ -1,0 +1,25 @@
+.cta{
+    padding: 180px 0px 180px 0px;
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8)), url(../img/cta/bg.jpg);
+}
+
+.cta__tittle {
+    margin-bottom: 17px;
+}
+
+.cta__wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+.cta__text {
+    width: 540px;
+    line-height: 1.5;
+    font-family: $font-main;
+    font-weight:400;
+    font-size: 16px;
+    
+
+    p + p {
+        margin-top: 1em;
+    }
+}

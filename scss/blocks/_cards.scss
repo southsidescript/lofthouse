@@ -1,5 +1,5 @@
 .card {
-    display: inline-block;
+    display:block;
     position: relative;
     overflow: hidden;
    
@@ -46,7 +46,6 @@
     position: relative;
     z-index: 5;
     transition:all .2s ease-in;
-    
 }
 
 

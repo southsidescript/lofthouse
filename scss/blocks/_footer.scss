@@ -1,0 +1,40 @@
+.footer {
+    padding: 60px 0px;
+    background: #2D343C;
+}
+
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav-logo {
+}
+
+.footer__nav-stcolumn {
+}
+
+.footer__nav-link {
+    font-family: $font-main;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+
+.footer__nav-link p{
+    margin-bottom: 15px;
+}
+
+.footer__nav-ndcolumn {
+    
+}
+
+.footer__nav-rdcolumn {
+}
+
+.footer__callback {
+    display:flex;
+    column-gap: 20px;
+
+}

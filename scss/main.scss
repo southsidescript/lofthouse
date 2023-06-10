@@ -2,7 +2,7 @@
 @import './base/reset';
 @import  './base/vars';
 @import './base/base';
-
+@import './base/mixins';
 //Blocks
 
 @import './blocks/header';
@@ -10,5 +10,12 @@
 @import './blocks/benefits';
 @import './blocks/apartments';
 @import './blocks/cards';
+@import './blocks/cta';
+@import './blocks/form';
+@import './blocks/videblock';
+@import './blocks/map';
+@import './blocks/feedbackform';
+@import './blocks/footer';
+@import './blocks/nav-icon'
 
 

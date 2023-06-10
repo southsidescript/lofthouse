@@ -1,4 +1,12 @@
 .apartments {
+    position: relative;
+    &::before{
+        content: "III";
+        right: calc(50% + 555px);
+        transform: translate(50% , -5%);
+
+        @include decornumber;
+       }
 }
 
 .apartments__title {
@@ -6,4 +14,9 @@
 }
 
 .apartments__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   column-gap: 30px;
+   row-gap: 30px;
 }
